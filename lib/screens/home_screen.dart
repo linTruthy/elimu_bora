@@ -7,20 +7,21 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(
-      navigationBar: const CupertinoNavigationBar(
+    return const CupertinoPageScaffold(
+      navigationBar: CupertinoNavigationBar(
         middle: Text('Elimu Bora'),
       ),
       child: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text(
+            Text(
               'Welcome to Elimu Bora',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 32),
-            const PortalSelector(),
+            SizedBox(height: 32),
+            PortalSelector(),
           ],
         ),
       ),

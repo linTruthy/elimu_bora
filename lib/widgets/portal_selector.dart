@@ -12,11 +12,12 @@ class PortalSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        _buildPortalButton(context, 'Student Portal', CupertinoIcons.person_2_fill, StudentPortal()),
-        _buildPortalButton(context, 'Teacher Portal', CupertinoIcons.person_3_fill, TeacherPortal()),
-        _buildPortalButton(context, 'Admin Portal', CupertinoIcons.settings_solid, AdminPortal()),
-        _buildPortalButton(context, 'Parent Portal', CupertinoIcons.person_2_square_stack_fill, ParentPortal()),
+        _buildPortalButton(context, 'Student Portal', CupertinoIcons.person_2_fill, const StudentPortal()),
+        _buildPortalButton(context, 'Teacher Portal', CupertinoIcons.person_3_fill, const TeacherPortal()),
+        _buildPortalButton(context, 'Admin Portal', CupertinoIcons.settings_solid, const AdminPortal()),
+        _buildPortalButton(context, 'Parent Portal', CupertinoIcons.person_2_square_stack_fill, const ParentPortal()),
       ],
     );
   }
