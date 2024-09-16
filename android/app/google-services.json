@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "290416629490",
+    "project_id": "elimu-bora-2fb4a",
+    "storage_bucket": "elimu-bora-2fb4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290416629490:android:bdcea163ec3564b16fa26b",
+        "android_client_info": {
+          "package_name": "com.truthysystems.elimu_bora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxU3roMArDWvu0NwAbt0889iM8ZFoi_sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

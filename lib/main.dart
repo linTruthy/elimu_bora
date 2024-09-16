@@ -1,20 +1,37 @@
-import 'package:elimu_bora/page/login_Page.dart';
-import 'package:flutter/material.dart';
+// main.dart
+import 'package:flutter/cupertino.dart';
+import 'package:provider/provider.dart';
+import 'package:elimu_bora/services/auth_service.dart';
+import 'package:elimu_bora/screens/login_screen.dart';
+import 'package:elimu_bora/screens/home_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => AuthService(),
+      child: const ElimuBoraApp(),
+    ),
+  );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ElimuBoraApp extends StatelessWidget {
+  const ElimuBoraApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: LoginPage(),
-        ),
+    return CupertinoApp(
+      title: 'Elimu Bora',
+      theme: const CupertinoThemeData(
+        primaryColor: CupertinoColors.activeBlue,
+      ),
+      home: Consumer<AuthService>(
+        builder: (context, authService, child) {
+          if (authService.isAuthenticated) {
+            return const HomeScreen();
+          } else {
+            return const LoginScreen();
+          }
+        },
       ),
     );
   }

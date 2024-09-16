@@ -1,0 +1,36 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "elimu-bora-2fb4a",
+          "appId": "1:290416629490:android:bdcea163ec3564b16fa26b",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "elimu-bora-2fb4a",
+          "configurations": {
+            "android": "1:290416629490:android:bdcea163ec3564b16fa26b",
+            "ios": "1:290416629490:ios:1e9ee4f8547ffb346fa26b",
+            "macos": "1:290416629490:ios:1e9ee4f8547ffb346fa26b",
+            "web": "1:290416629490:web:08f0a1fe4325807e6fa26b",
+            "windows": "1:290416629490:web:7c82a7159640c0d16fa26b"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    }
+  }
+}
