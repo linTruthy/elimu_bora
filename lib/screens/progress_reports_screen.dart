@@ -3,7 +3,7 @@
 import 'package:flutter/cupertino.dart';
 
 class ProgressReportsScreen extends StatelessWidget {
-  const ProgressReportsScreen({Key? key}) : super(key: key);
+  const ProgressReportsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@
 import 'package:flutter/cupertino.dart';
 
 class SchoolActivitiesScreen extends StatelessWidget {
-  const SchoolActivitiesScreen({Key? key}) : super(key: key);
+  const SchoolActivitiesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

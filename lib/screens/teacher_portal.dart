@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 
 class TeacherPortal extends StatelessWidget {
-  const TeacherPortal({Key? key}) : super(key: key);
+  const TeacherPortal({super.key});
 
   @override
   Widget build(BuildContext context) {
